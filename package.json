@@ -37,5 +37,8 @@
     "serve": "webpack serve",
     "prettier:check": "npx prettier --check .",
     "prettier": "npx prettier --write ."
+  },
+  "dependencies": {
+    "vanilla-router": "^1.2.8"
   }
 }

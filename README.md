@@ -1,5 +1,5 @@
-# web-template
+# Biscoito ou bolacha? 🍪
 
-Um template para projetos web, com ferramentas pré-configuradas.
+Faça seu login e indique sua opção: é biscoito ou é bolacha?
 
-Mais informações em https://github.com/ermogenes/web-template-tutorial.
+Não é necessário fazer login para visualizar os resultados.

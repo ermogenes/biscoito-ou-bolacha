@@ -1,1 +1,4 @@
-console.log('Tudo funcionando corretamente.');
+import Routes from './routes';
+import './index.scss';
+
+Routes.start();

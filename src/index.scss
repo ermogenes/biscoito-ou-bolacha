@@ -1,0 +1,145 @@
+// Fontes
+// https://fonts.google.com/share?selection.family=Amatic%20SC:wght@400;700%7CJost:ital,wght@0,400;0,700;1,400;1,700
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Cores
+// https://colorhunt.co/palette/cee5d0f3f0d7e0c097ff7878
+// https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097
+
+// Imagens
+// https://dribbble.com/shots/11433237-Cookies
+// https://pattern.monster/sprinkles-1/
+// https://www.pexels.com/pt-br/foto/assado-assados-panificados-produtos-de-padaria-4110541/
+
+:root {
+  --largura-maxima: 700px;
+  --largura-minima: 450px;
+  --cor-fundo: #cee5d0;
+  --cor-fundo-acao: #ff7878;
+  --cor-fundo-secundario: #e0c097;
+  --cor-letra: #2d2424;
+  --cor-letra-acao: #f3f0d7;
+  --cor-letra-secundaria: #b85c38;
+  --fonte: 'Jost', sans-serif;
+  --fonte-destaque: 'Amatic SC', cursive;
+  --texto-minimo: 0.55rem;
+  --texto-menor: 0.75rem;
+  --texto-padrao: 24px;
+  --texto-maior: 1.5rem;
+  --texto-maximo: 3.7rem;
+  --bg-granulado: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='75' height='75' patternTransform='scale(4) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M32.763-11.976c-1.05-.075-1.95.676-2.024 1.726L29.764.849c-.075 1.05.675 1.95 1.725 2.026 1.05.075 1.95-.675 2.025-1.725l.975-11.1c.075-1.05-.675-1.95-1.725-2.025zM54.299 1.32a1.912 1.912 0 0 0-.386.015c-.975.15-1.725 1.05-1.575 2.1l1.5 11.025c.15.975 1.05 1.725 2.1 1.575a1.732 1.732 0 0 0 1.575-2.1l-1.5-11.025c-.131-.853-.836-1.533-1.714-1.59zm-46.93 1.22a1.809 1.809 0 0 0-1.662 1.663c-.075 1.05.675 1.952 1.65 2.027l11.1 1.05c.975.15 1.95-.601 2.025-1.651.15-.975-.6-1.95-1.65-2.025l-11.1-1.05a1.643 1.643 0 0 0-.363-.015zM1.76 13.017a1.825 1.825 0 0 0-1.285.6l-7.65 8.101c-.75.75-.675 1.95.075 2.625s1.95.674 2.625-.076l7.651-8.099c.75-.75.674-1.95-.076-2.625a1.785 1.785 0 0 0-1.34-.526zm75 0a1.825 1.825 0 0 0-1.285.6l-7.65 8.101c-.75.75-.675 1.95.075 2.625s1.95.674 2.625-.076l7.651-8.099c.75-.75.674-1.95-.076-2.625a1.785 1.785 0 0 0-1.34-.526zm-39.731 2.906a1.785 1.785 0 0 0-1.34.527l-7.95 7.723c-.75.675-.826 1.875-.076 2.625.675.75 1.875.752 2.625.077l7.95-7.725c.75-.675.826-1.875.076-2.625a1.825 1.825 0 0 0-1.285-.602zm24.639 18.928c-.24.02-.48.085-.705.197a1.903 1.903 0 0 0-.825 2.55l5.1 9.902a1.902 1.902 0 0 0 2.55.824c.975-.45 1.276-1.574.826-2.55l-5.1-9.9c-.395-.73-1.125-1.083-1.846-1.023zm-50.37-4.862a1.756 1.756 0 0 0-1.035.336c-.825.6-1.05 1.725-.524 2.625l6.15 9.223c.6.9 1.8 1.127 2.625.526.9-.6 1.124-1.8.524-2.624l-6.15-9.226a1.912 1.912 0 0 0-1.59-.86zm32.705 9.766c-.12-.006-.243 0-.365.019l-10.95 2.175c-1.05.15-1.725 1.126-1.5 2.176.15 1.05 1.126 1.725 2.176 1.5l10.95-2.175c1.05-.15 1.725-1.125 1.5-2.175a1.99 1.99 0 0 0-1.811-1.52zm4.556 12.195a1.932 1.932 0 0 0-1.845.949c-.45.9-.15 2.025.75 2.55l9.75 5.4c.9.45 2.025.15 2.55-.75.525-.9.15-2.025-.75-2.55l-9.75-5.4a1.958 1.958 0 0 0-.705-.199zM71.913 58c-1.05-.075-1.875.748-1.95 1.798l-.45 11.1c-.075 1.05.75 1.876 1.8 1.95.975 0 1.875-.75 1.95-1.8l.45-11.1c.075-1.05-.75-1.873-1.8-1.948zm-55.44 1.08a1.865 1.865 0 0 0-1.035.42l-8.775 6.825c-.75.6-.9 1.8-.3 2.625.6.75 1.8.9 2.626.3l8.775-6.827c.75-.6.9-1.8.3-2.625a1.783 1.783 0 0 0-1.591-.72zm16.29 3.945c-1.05-.075-1.95.675-2.024 1.725l-.975 11.099c-.075 1.05.675 1.95 1.725 2.026 1.05.075 1.95-.675 2.025-1.725l.975-11.102c.075-1.05-.675-1.95-1.725-2.024z'  stroke-width='1' stroke='none' fill='hsla(34, 54%, 74%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-400,-260)' fill='url(%23a)'/></svg>");
+}
+
+html {
+  font-size: var(--texto-padrao);
+}
+
+body {
+  min-width: var(--largura-minima);
+  margin: 0;
+  padding: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-letra);
+  font-family: var(--fonte);
+
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+  }
+
+  h1 {
+    font-size: var(--texto-maximo);
+    text-shadow: 0.1rem 0.1rem var(--cor-fundo-acao);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--cor-letra-acao);
+    background-color: var(--cor-fundo-acao);
+    padding: 0.5rem;
+    border: 0.2rem solid var(--cor-letra-acao);
+    border-radius: 0.5rem;
+    animation: shadow-pop-br 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  animation: color-change-2x 5s linear infinite alternate both;
+  background-image: var(--bg-granulado);
+
+  .container {
+    animation: color-change-2x 5s linear infinite alternate both;
+    background-image: none;
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+}
+
+#content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  & > * {
+    margin: 1rem auto;
+  }
+}
+
+// Animações
+// animista.net
+.shadow-pop-br {
+  animation: shadow-pop-br 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-br {
+  0% {
+    box-shadow: 0 0 var(--cor-letra), 0 0 var(--cor-letra), 0 0 var(--cor-letra),
+      0 0 var(--cor-letra), 0 0 var(--cor-letra), 0 0 var(--cor-letra),
+      0 0 var(--cor-letra), 0 0 var(--cor-letra);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px var(--cor-letra), 2px 2px var(--cor-letra),
+      3px 3px var(--cor-letra), 4px 4px var(--cor-letra),
+      5px 5px var(--cor-letra), 6px 6px var(--cor-letra),
+      7px 7px var(--cor-letra), 8px 8px var(--cor-letra);
+    transform: translateX(-8px) translateY(-8px);
+  }
+}
+
+.color-change-2x {
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@keyframes color-change-2x {
+  0% {
+    background-color: var(--cor-fundo);
+  }
+  25% {
+    background-color: var(--cor-fundo);
+  }
+  100% {
+    background-color: var(--cor-fundo-secundario);
+  }
+}
