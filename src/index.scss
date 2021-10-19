@@ -14,7 +14,7 @@
 
 :root {
   --largura-maxima: 700px;
-  --largura-minima: 450px;
+  --largura-minima: 320px;
   --cor-fundo: #cee5d0;
   --cor-fundo-acao: #ff7878;
   --cor-fundo-secundario: #e0c097;
@@ -27,7 +27,7 @@
   --texto-menor: 0.75rem;
   --texto-padrao: 24px;
   --texto-maior: 1.5rem;
-  --texto-maximo: 3.7rem;
+  --texto-maximo: 3rem;
   --bg-granulado: url(./assets/bg.png);
 }
 
@@ -75,7 +75,8 @@ body {
   }
 
   img {
-    max-width: 100%;
+    // display: block;
+    // max-width: 100%;
   }
 }
 
