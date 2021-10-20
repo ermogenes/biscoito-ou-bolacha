@@ -31,7 +31,6 @@ const db = getFirestore();
 const getResults = async () => {
   const docRef = doc(db, 'results', '1');
   const docSnap = await getDoc(docRef);
-  console.log(docSnap.data());
   return docSnap.exists() ? docSnap.data() : {};
 };
 
@@ -79,8 +78,6 @@ const showResultsPage = () => {
 
     const biscoitoPercentual = document.querySelector('#biscoito .percentual');
     const bolachaPercentual = document.querySelector('#bolacha .percentual');
-    console.log('biscoito', biscoitoPercentual);
-    console.log('bolacha', bolachaPercentual);
 
     biscoitoPercentual.innerHTML = `${resultado.biscoito100.toFixed(1)}%`;
     bolachaPercentual.innerHTML = `${resultado.bolacha100.toFixed(1)}%`;
