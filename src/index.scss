@@ -75,8 +75,7 @@ body {
   }
 
   img {
-    // display: block;
-    // max-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -90,6 +89,7 @@ body {
     animation: color-change-2x 5s linear infinite alternate both;
     background-image: none;
     max-width: var(--largura-maxima);
+    min-width: var(--largura-minima);
     margin: 0 auto;
     padding: 0 1em;
   }
@@ -97,6 +97,7 @@ body {
 
 #content {
   min-height: 100vh;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;

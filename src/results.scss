@@ -1,0 +1,39 @@
+#results {
+  font-size: 1.5em;
+  text-align: center;
+
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+
+  .vencedor .animado {
+    // animista.net
+    animation: text-shadow-pop-br 0.6s both;
+  }
+
+  .percentual {
+    color: var(--cor-letra-secundaria);
+  }
+}
+
+@keyframes text-shadow-pop-br {
+  0% {
+    text-shadow: 0 0 var(--cor-letra-secundaria),
+      0 0 var(--cor-letra-secundaria), 0 0 var(--cor-letra-secundaria),
+      0 0 var(--cor-letra-secundaria), 0 0 var(--cor-letra-secundaria),
+      0 0 var(--cor-letra-secundaria), 0 0 var(--cor-letra-secundaria),
+      0 0 var(--cor-letra-secundaria);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: 1px 1px var(--cor-letra-secundaria),
+      2px 2px var(--cor-letra-secundaria), 3px 3px var(--cor-letra-secundaria),
+      4px 4px var(--cor-letra-secundaria), 5px 5px var(--cor-letra-secundaria),
+      6px 6px var(--cor-letra-secundaria), 7px 7px var(--cor-letra-secundaria),
+      8px 8px var(--cor-letra-secundaria);
+    transform: translateX(-8px) translateY(-8px);
+  }
+}
